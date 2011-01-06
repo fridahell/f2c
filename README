@@ -1,0 +1,32 @@
+NAME
+   	f2c - convert fahrenheit to celsius
+
+SYNOPSIS
+   	f2c [fahrenheit]
+
+DESCRIPTION
+   	Tiny script to convert fahrenheit into celsius,
+   	takes input in fahrenheit as command line argument,
+   	gives output in celsius to standard output
+
+AUTHOR
+		Frida Hellden <frida@austinprkonsult.se>
+
+LICENSE
+   	http://www.gnu.org/licenses/gpl.html
+
+EXAMPLES
+   	Convert 12.5 fahrenheit to celsius
+   	./f2c -12.5
+   	-24.72
+
+DIAGNOSTICS
+   	The f2c utility exits
+   	0 on success,
+   	1 if called with invalid number of arguments,
+   	2 if the input is not a float,
+   	3 if an unknown error happens
+
+REFERENCES
+   	Fahrenheit to celsius formula stolen from
+   	http://en.wikipedia.org/wiki/Fahrenheit
