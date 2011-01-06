@@ -8,7 +8,7 @@ def main():
 		# sys.argv is the number of arguments + 1 because
 		# the program's name is in sys.argv[0]
 		if len(sys.argv) != 2:
-			print "invalid arguments (%d), usage: %s [fahrenheit]" % (len(sys.argv), sys.argv[0])
+			print "invalid args (%d), usage: %s [fahrenheit]" % (len(sys.argv), sys.argv[0])
 			return 1
 
 		# Set fahrenheit variable to first command line argument and convert
