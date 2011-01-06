@@ -4,15 +4,20 @@ import sys
 
 def main():
 	try:
-		# Make sure the program is called with exactly one argument.
+		# If called without arguments, get temperature from standard input.
+		if len(sys.argv) == 1:
+			# Read string from standard input
+			fahrenheit = float(raw_input("Enter temperature in fahrenheit: "))
+		# Otherwise, make sure the program is called with exactly one argument.
 		# sys.argv is the number of arguments + 1 because
 		# the program's name is in sys.argv[0]
-		if len(sys.argv) != 2:
+		elif len(sys.argv) == 2:
+			# Set fahrenheit variable to first command line argument and convert
+			fahrenheit = float(sys.argv[1])
+		else:
 			print "invalid args (%d), usage: %s [fahrenheit]" % (len(sys.argv), sys.argv[0])
 			return 1
 
-		# Set fahrenheit variable to first command line argument and convert
-		fahrenheit = float(sys.argv[1])
 
 		# Set celsius variable to the calculated value
 		# we get by converting fahrenheit into celsius using the formula
